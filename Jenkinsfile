@@ -16,5 +16,10 @@ pipeline {
           }
       }
    }
+   post {
+      success {
+          archiveArtifacts artifacts: '/var/lib/jenkins/workspace/artsrectangle.jar', fingerprint: true
+      }
+   }
 }
 
