@@ -18,7 +18,7 @@ pipeline {
    }
    post {
       success {
-          archiveArtifacts artifacts: '/var/lib/jenkins/workspace/artsrectangle.jar', fingerprint: true
+          archiveArtifacts artifacts: '/var/lib/jenkins/workspace/arts/rectangle.jar', fingerprint: true
       }
    }
 }
